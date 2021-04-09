@@ -18,8 +18,5 @@ g_XX = []
 
 g_XX = g_01 + g_02 + g_03 + g_04 + g_05 + \
     g_06 + g_07 + g_08 + g_09 + g_10 + g_11
-# print(g_XX)
 
-# for i in range(1, 8*4):
-# print(g_XX[i])
 print(Counter(g_XX))
