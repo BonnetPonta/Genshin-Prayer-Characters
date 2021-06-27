@@ -1,5 +1,5 @@
 # https://h1g.jp/genshin/?過去のガチャ情報
-import pprint
+from pprint import pprint
 from collections import Counter
 from json import load
 
@@ -8,4 +8,4 @@ with open(r"DB.json", "r", encoding="utf-8_sig") as f:
     json_load = load(f)
 characters = [elems[i] for i in range(4) for elems in json_load.values()]
 
-pprint.pprint(Counter(characters))
+pprint(Counter(characters))
